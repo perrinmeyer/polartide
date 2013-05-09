@@ -1,0 +1,20 @@
+9 may 2013
+
+Deps (Dependencies):  fftw, sox
+
+uncompress fftw in deps/
+$ tar xvfz fftw-3.3.3.tar.gz
+$ cd fftw-3.3.3
+
+CHANGE BASED ON LOCAL FILE SYSTEM 
+$ ./configure --prefix=/Users/perrin/polartide/AirAttenuationFilter/deps/fftw_local/ --enable-float 
+
+$ make ; make check 
+
+$ make install 
+
+link to header file 
+$ ln -s deps/fftw_local/include/fftw3.h .
+
+$ make
+
