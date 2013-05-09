@@ -18,3 +18,11 @@ $ ln -s deps/fftw_local/include/fftw3.h .
 
 $ make
 
+as a simple test
+
+./psmAirAtten 20 50 101.325 50 44.1 >h_test_github.txt
+
+should give the "same" answers as in the file h_test.txt, at least to within single precision (1e-10 or so). 
+
+
+
