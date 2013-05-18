@@ -63,7 +63,9 @@ int main(int argc, char * argv[]) {
     exit(0);
   }
 
-  int fftlength = 8192; // 2^13  
+  //int fftlength = 8192; // 2^13  
+  //int fftlength = 4096; // 2^12  
+  int fftlength = 2048; // 2^11  
   int fftlengthhalf = (fftlength / 2) + 1; 
 
   float * n =  (float *)malloc(fftlength * sizeof(float));
@@ -100,7 +102,7 @@ int main(int argc, char * argv[]) {
   static float msli_pi = 3.141592653589793;
 
   // delay it to middle of window for linear phase (causual) filter 
-  for (int i = 0 ; i < fftlengthhalf ; i++ ) Hair2[i] = Hair2[i] * cexpf(-I  * 2.0 * msli_pi * f2[i] * (2048.0 * (1.0 / fs)));
+  for (int i = 0 ; i < fftlengthhalf ; i++ ) Hair2[i] = Hair2[i] * cexpf(-I  * 2.0 * msli_pi * f2[i] * (fftlength/4 * (1.0 / fs)));
 
   float _Complex * H = (float _Complex *)malloc(fftlength * sizeof(float _Complex));
   
