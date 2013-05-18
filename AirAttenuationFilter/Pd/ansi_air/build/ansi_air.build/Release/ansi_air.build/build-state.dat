@@ -1,0 +1,141 @@
+Tansi_air
+v5
+r1
+cCheck dependencies
+cCompileC build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cMasterObjectLink /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o
+cLd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin normal i386
+cGenerateDSYMFile /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/complex.h
+c0000000051579C280000000000001375
+t1364696104
+s4981
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/math.h
+c0000000051579C2900000000000066C2
+t1364696105
+s26306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdio.h
+c0000000051579C2A0000000000004523
+t1364696106
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c0000000051579C2A0000000000003089
+t1364696106
+s12425
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/string.h
+c0000000051579C2A0000000000001A3A
+t1364696106
+s6714
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/time.h
+c0000000051579C2A000000000000178E
+t1364696106
+s6030
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/4.2/include/stdint.h
+c0000000051579C2C00000000000056A4
+t1364696108
+s22180
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c
+c000000005191A06800000000000023C7
+t1368498280
+s9159
+i"m_pd.h"
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<time.h>
+i<math.h>
+i<stdint.h>
+i<complex.h>
+i"fftw3.h"
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin
+t2
+s0
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM
+t2
+s0
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o
+t2
+s0
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.LinkFileList
+c000000005191A06A0000000000000098
+t1368498282
+s152
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o
+t2
+s0
+
+N/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/m_pd.h
+c0000000051843EB80000000000006386
+t1367621304
+s25478
+
+N/usr/local/include/fftw3.h
+c000000005191825F0000000000004546
+t1368490591
+s17734
+
+CBuild AST from /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa88a59ead741b741^b49060ead741b741^---0#1#0#--18"Check dependencies36"0C09AB6E-9A40-448B-A3C5-841F3B488701-
+
+CCompileC build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s390191082.387625
+e390191082.486944
+r1
+xCompileC
+xbuild/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o
+x/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c666963ead741b741^1aa87cead741b741^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c0000000000000000^2597"CompileC build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o ansi_air.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/ansi_air-generated-files.hmap -I/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/ansi_air-own-target-headers.hmap -I/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/ansi_air-all-target-headers.hmap -iquote /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/ansi_air-project-headers.hmap -I/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/include -I/usr/local/include -I/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/DerivedSources/i386 -I/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/DerivedSources -F/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release -MMD -MT dependencies -MF /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.d --serialize-diagnostics /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.dia -c /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/ansi_air.c -o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o36"1DA2E977-B800-4CD3-B92B-26FF46DCC9E5-
+
+CGenerateDSYMFile /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin
+s390191082.606208
+e390191082.634146
+r1
+xGenerateDSYMFile
+x/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM
+x/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Generate /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM03429bead741b741^0057a2ead741b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM000000000080d041^449"GenerateDSYMFile build/Release/ansi_air.pd_darwin.dSYM build/Release/ansi_air.pd_darwin    cd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin -o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin.dSYM36"3C1A74DB-47AC-40E1-BA2F-A4C7EEC5960D-
+
+CLd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin normal i386
+s390191082.533104
+e390191082.599987
+r1
+xLd
+x/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Link /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwinb88f88ead741b741^af9899ead741b741^---0#0#0#--962"Ld build/Release/ansi_air.pd_darwin normal i386    cd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release -L/usr/local/lib -F/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release -filelist /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.LinkFileList -install_name /usr/local/lib/ansi_air.pd_darwin -mmacosx-version-min=10.7 -lfftw3 -lm -undefined dynamic_lookup -compatibility_version 1 -current_version 1 -o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/Release/ansi_air.pd_darwin36"EAE4BF6D-6A4B-412A-B48F-638EB9665B3A-
+
+CMasterObjectLink /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o
+s390191082.494496
+e390191082.526277
+r1
+xMasterObjectLink
+x/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection156"Link /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.ocaa87eead741b741^1bb986ead741b741^---0#0#0#-19%DVTDocumentLocation2@167"file://localhost/Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o000000000080d041^601"MasterObjectLink build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o    cd /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -r -arch i386 /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/i386/ansi_air.o /usr/local/lib/libfftw3f.a -o /Users/rama/Documents/__CNMAT/cnmat-git/pd-externs/ansi_air/build/ansi_air.build/Release/ansi_air.build/Objects-normal/ansi_air.pd_darwin-i386-master.o36"4764542A-0793-40D7-922B-811110B7D0A5-
+
