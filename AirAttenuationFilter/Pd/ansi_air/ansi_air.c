@@ -201,7 +201,7 @@ void ansi_air_bang(t_ansi_air *x)
             Hair[i] = cpowf(10.0,air[i]/20.0);
             
             // delay it to middle of window for linear phase (causual) filter
-            Hair2[i] = Hair[i] * cexpf(-I  * 2.0 * msli_pi * f2[i] * (2048.0 * (1.0 / fs)));
+            Hair2[i] = Hair[i] * cexpf(-I  * 2.0 * msli_pi * f2[i] * (fftlength/4 * (1.0 / fs)));
             
             H[i] = Hair2[i];
         } else {
