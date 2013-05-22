@@ -231,33 +231,41 @@ void ansi_air_getSize(t_ansi_air *x)
 
 }
 
+void ansi_air_setSize(t_ansi_air *x, float f)
+{
+    x->fftlength = (int)f;
+    ansi_air_getSize(x);
+ //   post("[ansi_air] fftlength set to %ld", x->fftlength);
+    
+}
+
 void ansi_air_setTemp(t_ansi_air *x, float f)
 {
     x->tempC = f;
-    post("[ansi_air] temperture set to %f", x->tempC);
+   // post("[ansi_air] temperture set to %f", x->tempC);
 }
 
 void ansi_air_setHum(t_ansi_air *x, float f)
 {
     x->hum = f;
-    post("[ansi_air] humidity set to %f", x->hum);
+//    post("[ansi_air] humidity set to %f", x->hum);
 
 }
 
 void ansi_air_setPressure(t_ansi_air *x, float f)
 {
     x->pressure = f;
-    post("[ansi_air] pressure set to %f", x->pressure);
+//    post("[ansi_air] pressure set to %f", x->pressure);
 }
 
 void ansi_air_setDistance(t_ansi_air *x, float f)
 {
     x->dist = f;
-    post("[ansi_air] distance set to %f", x->dist);
+//    post("[ansi_air] distance set to %f", x->dist);
 
 }
 
-void *ansi_air_new(void)
+void *ansi_air_new(t_floatarg f)
 {
     t_ansi_air *x = (t_ansi_air *)pd_new(ansi_air_class);
     if(x)
@@ -269,10 +277,16 @@ void *ansi_air_new(void)
         if (x->fs > 51e3) {
             post("filter not tested above 48kHz sampling. probably fine, but try at your own risk... perrin@MSLI.com \n\n");
         } else {
-            post("debug: fs set to %f", x->fs);
+            ;
+            // post("debug: fs set to %f", x->fs);
         }
         
-        x->fftlength = (1<<13);
+        if(f){
+            x->fftlength = (int)f;
+            post("tabsize set to %i", x->fftlength);
+        } else {
+           x->fftlength = (1<<13);
+        }
         x->fftlengthhalf = (x->fftlength / 2) + 1;
 
         //default values?
@@ -282,23 +296,18 @@ void *ansi_air_new(void)
         x->dist = 10;
         
         ansi_air_getSize(x);
-        
+        return (void *)x;
+
     }
     
-
-  return (void *)x;
+    return 0;
 }
 
 
 void ansi_air_setup(void) {
   /* create a new class */
-    ansi_air_class = class_new(gensym("ansi_air"),        /* the object's name is "ansi_air" */
-			       (t_newmethod)ansi_air_new, /* the object's constructor is "ansi_air_new()" */
-			       0,                           /* no special destructor */
-			       sizeof(t_ansi_air),        /* the size of the data-space */
-			       CLASS_DEFAULT,               /* a normal pd object */
-			       0);                          /* no creation arguments */
-
+    ansi_air_class = class_new(gensym("ansi_air"), (t_newmethod)ansi_air_new,0, sizeof(t_ansi_air), CLASS_DEFAULT, A_DEFFLOAT, 0);
+    class_addmethod(ansi_air_class, (t_method)ansi_air_setSize, gensym("settabsize"), A_DEFFLOAT, 0);
     class_addmethod(ansi_air_class, (t_method)ansi_air_getSize, gensym("gettabsize"), A_CANT, 0);
     class_addmethod(ansi_air_class, (t_method)ansi_air_setTemp, gensym("temp"), A_DEFFLOAT, 0);
     class_addmethod(ansi_air_class, (t_method)ansi_air_setHum, gensym("humidity"), A_DEFFLOAT, 0);
