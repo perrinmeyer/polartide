@@ -20,7 +20,7 @@ void draw(){
   
 void sendOSC(){
   String msg[]= loadStrings("http://www.polartide.org/bellstate.php");
-  if(msg[0] != null){
+  if(msg != null){
     OscMessage myMessage = new OscMessage("/data");
     myMessage.add(msg[0]); /* add an int to the osc message */
     textSize(12);
