@@ -20,12 +20,13 @@ void draw(){
   
 void sendOSC(){
   String msg[]= loadStrings("http://www.polartide.org/bellstate.php");
-
-  OscMessage myMessage = new OscMessage("/data");
-  myMessage.add(msg[0]); /* add an int to the osc message */
-  textSize(12);
-  fill(0);
-  text(msg[0], 10, 10, 600, 490);
+  if(msg[0] != null){
+    OscMessage myMessage = new OscMessage("/data");
+    myMessage.add(msg[0]); /* add an int to the osc message */
+    textSize(12);
+    fill(0);
+    text(msg[0], 10, 10, 600, 490);
   /* send the message */
-  oscP5.send(myMessage, myRemoteLocation);
-  }
+    oscP5.send(myMessage, myRemoteLocation);
+  }  
+}
