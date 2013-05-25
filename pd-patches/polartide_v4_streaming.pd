@@ -1,7 +1,7 @@
 #N canvas 280 79 1208 710 10;
 #X declare -lib iemmatrix;
 #X obj 485 138 vsl 15 50 -100 12 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4244 1;
+-1 -1 4156 1;
 #X floatatom 485 109 5 0 0 0 - - -;
 #X floatatom 188 390 5 0 0 0 - - -;
 #X text 216 364 % cpu;
@@ -352,7 +352,7 @@
 #X connect 13 1 1 0;
 #X restore 344 395 pd >>>mp3_cast<<<;
 #N canvas 160 67 863 538 ~~~dsp~~~ 0;
-#N canvas 125 119 1085 641 water_bells 1;
+#N canvas 125 119 1085 641 water_bells 0;
 #X obj 136 176 db2v;
 #N canvas 785 709 450 300 8ch_diag 0;
 #X floatatom 81 90 5 0 0 2 - - -;
@@ -1012,7 +1012,7 @@ on speaker setup);
 #X connect 65 0 60 0;
 #X connect 66 0 61 0;
 #X restore 581 251 pd belle;
-#N canvas 166 35 1040 833 kerg 1;
+#N canvas 166 35 1040 833 kerg 0;
 #X obj 352 -498 route clicks level;
 #X obj 352 -528 inlet;
 #X obj 404 -375 change;
@@ -1109,11 +1109,11 @@ on speaker setup);
 #N canvas 74 55 1130 820 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 12 1;
+-262144 -1 -1 0 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 139 1;
+-1 -1 0 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -4113,7 +4113,7 @@ on speaker setup);
 #X text 993 399 << open oil tines;
 #X text 992 459 << open data update;
 #X text 992 509 << open wave;
-#X msg 485 86 -3;
+#X msg 485 86 -5;
 #X connect 0 0 32 0;
 #X connect 0 0 44 0;
 #X connect 1 0 0 0;
