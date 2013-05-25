@@ -1,4 +1,4 @@
-#N canvas -21 87 1208 710 10;
+#N canvas 0 87 1208 710 10;
 #X declare -lib iemmatrix;
 #X obj 485 138 vsl 15 50 -100 12 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 4375 1;
@@ -1222,7 +1222,7 @@ on speaker setup);
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 114 1;
+-1 -1 0 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1586,14 +1586,11 @@ on speaker setup);
 #X obj 37 -299 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 162 -374 5 0 0 0 - - -;
-#X obj 75 -241 spigot;
-#X obj 108 -277 != 0;
 #X connect 0 0 16 0;
 #X connect 0 1 2 0;
 #X connect 0 1 4 1;
 #X connect 1 0 0 0;
 #X connect 2 0 23 0;
-#X connect 2 0 27 0;
 #X connect 3 0 23 0;
 #X connect 4 0 3 0;
 #X connect 5 0 4 0;
@@ -1611,13 +1608,11 @@ on speaker setup);
 #X connect 16 1 9 0;
 #X connect 18 0 6 0;
 #X connect 20 0 14 0;
-#X connect 21 0 26 0;
+#X connect 21 0 9 0;
 #X connect 21 1 11 0;
 #X connect 22 0 21 0;
 #X connect 23 0 15 0;
 #X connect 23 0 8 0;
-#X connect 26 0 9 0;
-#X connect 27 0 26 1;
 #X restore 361 184 pd ganm mapping;
 #N canvas 307 22 1040 833 reyk 0;
 #X obj 352 -498 route clicks level;

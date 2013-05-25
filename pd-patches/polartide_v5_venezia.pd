@@ -1074,11 +1074,11 @@ on speaker setup);
 #N canvas 74 55 1130 820 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4988 1;
+-262144 -1 -1 9192 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5110 1;
+-1 -1 9310 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1284,11 +1284,11 @@ on speaker setup);
 #N canvas 516 67 1433 977 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 5635 1;
+-262144 -1 -1 7799 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5756 1;
+-1 -1 7918 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1390,11 +1390,11 @@ on speaker setup);
 #N canvas 516 67 1433 977 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 734 1;
+-262144 -1 -1 8670 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 860 1;
+-1 -1 8788 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1546,14 +1546,11 @@ on speaker setup);
 #X obj 37 -299 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 162 -374 5 0 0 0 - - -;
-#X obj 75 -241 spigot;
-#X obj 108 -277 != 0;
 #X connect 0 0 16 0;
 #X connect 0 1 2 0;
 #X connect 0 1 4 1;
 #X connect 1 0 0 0;
 #X connect 2 0 23 0;
-#X connect 2 0 27 0;
 #X connect 3 0 23 0;
 #X connect 4 0 3 0;
 #X connect 5 0 4 0;
@@ -1571,13 +1568,11 @@ on speaker setup);
 #X connect 16 1 9 0;
 #X connect 18 0 6 0;
 #X connect 20 0 14 0;
-#X connect 21 0 26 0;
+#X connect 21 0 9 0;
 #X connect 21 1 11 0;
 #X connect 22 0 21 0;
 #X connect 23 0 15 0;
 #X connect 23 0 8 0;
-#X connect 26 0 9 0;
-#X connect 27 0 26 1;
 #X restore 361 184 pd ganm mapping;
 #N canvas 307 22 1040 833 reyk 0;
 #X obj 352 -498 route clicks level;
@@ -2302,7 +2297,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 2917 1;
+-262144 -1 -1 11310 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -2551,7 +2546,7 @@ on speaker setup);
 #N canvas 276 123 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4630 1;
+-262144 -1 -1 8280 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -2803,7 +2798,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 3612 1;
+-262144 -1 -1 5127 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -3052,7 +3047,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7362 1;
+-262144 -1 -1 8355 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -3542,7 +3537,7 @@ on speaker setup);
 #X restore 27 238 pd master_gain _____________________________________________
 ;
 #X obj 20 46 r stream;
-#N canvas -30 22 1280 853 data_update 0;
+#N canvas 0 22 1280 853 data_update 0;
 #X obj -3992 -4762 db2v;
 #N canvas 1699 695 450 300 8ch_diag 0;
 #X floatatom 81 90 5 0 0 2 - - -;
