@@ -1,7 +1,7 @@
-#N canvas 0 87 1208 710 10;
+#N canvas 280 79 1208 710 10;
 #X declare -lib iemmatrix;
 #X obj 485 138 vsl 15 50 -100 12 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4375 1;
+-1 -1 4244 1;
 #X floatatom 485 109 5 0 0 0 - - -;
 #X floatatom 188 390 5 0 0 0 - - -;
 #X text 216 364 % cpu;
@@ -318,7 +318,6 @@
 #X obj -30 267 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 128 161 \; stream nonupdates bang;
-#X msg 485 86 0;
 #N canvas 41 138 1220 450 >>>mp3_cast<<< 0;
 #X obj 616 -18518 s StreamSet;
 #X msg 522 -18646 disconnect;
@@ -335,17 +334,13 @@
 #X obj 616 -18689 t b b b b;
 #X obj 616 -18729 sel 1 0;
 #X obj 85 -18631 dac~;
-#X obj 48 -18712 tanh~;
-#X obj 88 -18712 tanh~;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
 #X connect 5 0 0 0;
 #X connect 7 0 6 0;
-#X connect 8 0 15 0;
 #X connect 8 0 6 0;
-#X connect 9 0 16 0;
 #X connect 9 0 6 1;
 #X connect 10 0 11 0;
 #X connect 11 0 13 0;
@@ -357,7 +352,7 @@
 #X connect 13 1 1 0;
 #X restore 344 395 pd >>>mp3_cast<<<;
 #N canvas 160 67 863 538 ~~~dsp~~~ 0;
-#N canvas 125 119 1085 641 water_bells 0;
+#N canvas 125 119 1085 641 water_bells 1;
 #X obj 136 176 db2v;
 #N canvas 785 709 450 300 8ch_diag 0;
 #X floatatom 81 90 5 0 0 2 - - -;
@@ -1017,7 +1012,7 @@ on speaker setup);
 #X connect 65 0 60 0;
 #X connect 66 0 61 0;
 #X restore 581 251 pd belle;
-#N canvas 166 35 1040 833 kerg 0;
+#N canvas 166 35 1040 833 kerg 1;
 #X obj 352 -498 route clicks level;
 #X obj 352 -528 inlet;
 #X obj 404 -375 change;
@@ -1114,11 +1109,11 @@ on speaker setup);
 #N canvas 74 55 1130 820 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7102 1;
+-262144 -1 -1 12 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7222 1;
+-1 -1 139 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1324,11 +1319,11 @@ on speaker setup);
 #N canvas 516 67 1433 977 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7525 1;
+-262144 -1 -1 0 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7645 1;
+-1 -1 0 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -1430,11 +1425,11 @@ on speaker setup);
 #N canvas 516 67 1433 977 UI+defaults 0;
 #X msg -127 -167 users \$1;
 #X obj -124 -213 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 3694 1;
+-262144 -1 -1 0 1;
 #X text -56 -168 0.0001 - 1;
 #X msg 571 -104 users \$1;
 #X obj 574 -166 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3817 1;
+-1 -1 0 1;
 #X msg 492 -96 b \$1;
 #X floatatom 492 -125 5 0 0 0 - - -;
 #X text 456 -143 choose your bell;
@@ -2505,7 +2500,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 8330 1;
+-262144 -1 -1 0 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -2754,7 +2749,7 @@ on speaker setup);
 #N canvas 276 123 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4630 1;
+-262144 -1 -1 0 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -3006,7 +3001,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 3612 1;
+-262144 -1 -1 0 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -3255,7 +3250,7 @@ on speaker setup);
 #N canvas 765 362 1433 977 UI+defaults 0;
 #X msg 148 4 users \$1;
 #X obj 151 -42 hsl 128 15 0.001 1 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7362 1;
+-262144 -1 -1 0 1;
 #X text 219 3 0.0001 - 1;
 #X obj 356 -88 vsl 15 128 5 200 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 11500 1;
@@ -4118,15 +4113,16 @@ on speaker setup);
 #X text 993 399 << open oil tines;
 #X text 992 459 << open data update;
 #X text 992 509 << open wave;
+#X msg 485 86 -3;
 #X connect 0 0 32 0;
 #X connect 0 0 44 0;
 #X connect 1 0 0 0;
 #X connect 4 0 18 0;
-#X connect 6 0 61 0;
-#X connect 6 0 65 0;
-#X connect 6 0 67 0;
-#X connect 6 0 66 0;
+#X connect 6 0 73 0;
 #X connect 6 0 64 0;
+#X connect 6 0 66 0;
+#X connect 6 0 65 0;
+#X connect 6 0 63 0;
 #X connect 9 0 31 0;
 #X connect 9 0 42 0;
 #X connect 10 0 9 0;
@@ -4142,18 +4138,18 @@ on speaker setup);
 #X connect 36 0 50 0;
 #X connect 37 0 36 0;
 #X connect 52 0 53 0;
-#X connect 53 0 62 2;
-#X connect 54 0 62 2;
+#X connect 53 0 61 2;
+#X connect 54 0 61 2;
 #X connect 56 0 57 0;
 #X connect 57 0 59 0;
 #X connect 58 0 55 0;
 #X connect 59 0 58 0;
-#X connect 61 0 1 0;
-#X connect 63 0 62 0;
-#X connect 63 1 62 1;
-#X connect 64 0 37 0;
-#X connect 65 0 13 0;
-#X connect 66 0 10 0;
-#X connect 67 0 16 0;
-#X connect 68 0 69 0;
-#X connect 69 0 4 0;
+#X connect 62 0 61 0;
+#X connect 62 1 61 1;
+#X connect 63 0 37 0;
+#X connect 64 0 13 0;
+#X connect 65 0 10 0;
+#X connect 66 0 16 0;
+#X connect 67 0 68 0;
+#X connect 68 0 4 0;
+#X connect 73 0 1 0;
