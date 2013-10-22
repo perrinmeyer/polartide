@@ -1,6 +1,5 @@
 #N canvas 855 22 495 484 10;
 #X declare -lib cnmat -lib iemmatrix -lib hexloader;
-#X declare -lib iemguts;
 #X obj 233 273 noise~;
 #X obj 275 27 import cnmat iemmatrix hexloader;
 #X obj 19 154 opack /channel 1 /amp 0.1;
