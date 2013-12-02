@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 297.0, 68.0, 1102.0, 702.0 ],
+		"rect" : [ 375.0, 44.0, 925.0, 583.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -31,29 +31,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"id" : "obj-1",
-					"linecount" : 20,
-					"maxclass" : "o.message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.5, 523.0, 936.0, 253.0 ],
-					"presentation_rect" : [ 23.5, 457.0, 0.0, 0.0 ],
-					"text" : "/new/midi 47 75 57 77 47 75 57 77 47 75 57 77 47 75 57 77 47 75 57 77\n/new/offset 0.17 0.17 0.17 0.07 0.17 0.17 0.17 0.07 0.17 0.17 0.17 0.07 0.17 0.17 0.17 0.07 0.17 0.17 0.17 0.07\n/new/timetag 2013-11-24T22:44:41.152890Z\n/new/times 2013-11-24T22:44:39.790805Z 2013-11-24T22:44:39.890805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:40.349107Z 2013-11-24T22:44:40.449107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.644901Z 2013-11-24T22:44:40.744901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.956799Z 2013-11-24T22:44:41.056798Z 2013-11-24T22:44:41.156798Z 2013-11-24T22:44:41.156798Z 2013-11-24T22:44:41.252890Z 2013-11-24T22:44:41.352890Z 2013-11-24T22:44:41.452890Z 2013-11-24T22:44:41.452890Z\n/count 1\n/prev/midi 47 75 57 77 47 75 57 77 47 75 57 77 47 75 57 77\n/prev/offset 0.1 0.1 0.1 0. 0.1 0.1 0.1 0. 0.1 0.1 0.1 0. 0.1 0.1 0.1 0.\n/prev/timetag 2013-11-24T22:44:40.856799Z\n/prev/times 2013-11-24T22:44:39.790805Z 2013-11-24T22:44:39.890805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:40.349107Z 2013-11-24T22:44:40.449107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.644901Z 2013-11-24T22:44:40.744901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.956799Z 2013-11-24T22:44:41.056798Z 2013-11-24T22:44:41.156798Z 2013-11-24T22:44:41.156798Z\n/seg/times 2013-11-24T22:44:39.790805Z 2013-11-24T22:44:39.890805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:39.990805Z 2013-11-24T22:44:40.349107Z 2013-11-24T22:44:40.449107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.549107Z 2013-11-24T22:44:40.644901Z 2013-11-24T22:44:40.744901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.844901Z 2013-11-24T22:44:40.956799Z 2013-11-24T22:44:41.056798Z 2013-11-24T22:44:41.156798Z 2013-11-24T22:44:41.156798Z\n/seg/midi 47 75 57 77 47 75 57 77 47 75 57 77 47 75 57 77\n/seg/offset 0.1 0.1 0.1 0. 0.1 0.1 0.1 0. 0.1 0.1 0.1 0. 0.1 0.1 0.1 0.\n/phrase/1 47 0.17 75 0.17 57 0.17 77 0.07 47 0.17 75 0.17 57 0.17 77 0.07 47 0.17 75 0.17 57 0.17 77 0.07 47 0.17 75 0.17 57 0.17 77 0.07 47 0.17 75 0.17 57 0.17 77 0.07\n",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.0,
 					"id" : "obj-55",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 593.0, 411.0, 90.0, 19.0 ],
+					"patching_rect" : [ 606.0, 380.0, 90.0, 19.0 ],
 					"text" : "o.pack /phrase/*"
 				}
 
@@ -983,7 +966,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 277.5, 274.5, 247.0, 19.0 ],
-									"presentation_rect" : [ 272.0, 315.5, 0.0, 0.0 ],
 									"text" : "o.expr /times = cumsum( /offset ) + /timetag"
 								}
 
@@ -1013,7 +995,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 87.5, 667.5, 114.5, 43.0 ],
-									"presentation_rect" : [ 87.5, 667.5, 0.0, 0.0 ],
 									"text" : "o.expr /midi = scale(/pitch\\, 0\\, 511\\, 30.\\, 48.)"
 								}
 
@@ -6858,7 +6839,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 41.5, 303.0, 238.0, 19.0 ],
-					"text" : "/bell/reyk 303",
+					"text" : "/bell/kerg 338",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6900,7 +6881,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.5, 349.0, 50.0, 17.0 ],
+					"patching_rect" : [ 529.5, 318.0, 50.0, 17.0 ],
 					"text" : "open"
 				}
 
@@ -6914,7 +6895,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.5, 378.0, 50.0, 19.0 ],
+					"patching_rect" : [ 529.5, 347.0, 50.0, 19.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -6929,7 +6910,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 593.0, 368.0, 145.0, 29.0 ],
+					"patching_rect" : [ 606.0, 337.0, 145.0, 29.0 ],
 					"text" : "mode melody, micromode 0, size 1280 400"
 				}
 
@@ -6943,7 +6924,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 593.0, 341.0, 56.0, 19.0 ],
+					"patching_rect" : [ 606.0, 310.0, 56.0, 19.0 ],
 					"text" : "loadbang"
 				}
 
@@ -6985,7 +6966,6 @@
 						"digest" : "",
 						"tags" : "",
 						"showontab" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -7569,7 +7549,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 333.5, 454.0, 47.0, 19.0 ],
+					"patching_rect" : [ 333.5, 403.0, 47.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -7737,13 +7717,6 @@
 				"name" : "jsNotation.js",
 				"bootpath" : "/Users/rama/Documents/__CNMAT/cnmat-git/CNMAT-MMJ-Depot/patchers/display_and_notation/jsNotation",
 				"patcherrelativepath" : "../../../__CNMAT/cnmat-git/CNMAT-MMJ-Depot/patchers/display_and_notation/jsNotation",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "polarTideCarillonPitches.dat.txt",
-				"bootpath" : "/Users/rama/Documents/_code/polartide/data",
-				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
