@@ -6946,7 +6946,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 10.0, 44.0, 1335.0, 876.0 ],
+						"rect" : [ 122.0, 213.0, 1335.0, 876.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 11.0,
@@ -6966,6 +6966,7 @@
 						"digest" : "",
 						"tags" : "",
 						"showontab" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
