@@ -937,7 +937,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 392.0, 99.0, 1265.0, 844.0 ],
+						"rect" : [ 1012.0, 62.0, 1265.0, 844.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 11.0,
@@ -960,6 +960,20 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 11.0,
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 277.5, 227.0, 125.0, 19.0 ],
+									"text" : "o.expr /midi = /midi - 12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 11.0,
 									"frgb" : 0.0,
 									"id" : "obj-14",
 									"maxclass" : "comment",
@@ -979,7 +993,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 277.5, 274.5, 247.0, 19.0 ],
+									"patching_rect" : [ 277.5, 294.5, 247.0, 19.0 ],
 									"text" : "o.expr /times = cumsum( /offset ) + /timetag"
 								}
 
@@ -3557,7 +3571,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 277.5, 244.5, 98.0, 19.0 ],
+									"patching_rect" : [ 277.5, 264.5, 98.0, 19.0 ],
 									"text" : "o.timetag /timetag"
 								}
 
@@ -3571,7 +3585,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 277.5, 216.5, 188.0, 19.0 ],
+									"patching_rect" : [ 277.5, 201.5, 188.0, 19.0 ],
 									"text" : "o.pack /midi /offset 0.1 0.1 0.1 0."
 								}
 
@@ -5909,6 +5923,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-49", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -6107,7 +6130,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
+									"destination" : [ "obj-13", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-47", 0 ]
@@ -6337,7 +6360,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 50.0, 207.0, 456.0, 31.0 ],
+									"patching_rect" : [ 50.0, 207.0, 459.0, 31.0 ],
 									"text" : "o.expr map( lambda(a){ if( value(quote(/bell/clicks) + a) != value(quote(/prev/bell/clicks) + a)\\, assign( quote(/play/bell) + a\\, value(quote(/bell/level) + a)) )\\; }\\, /bells)"
 								}
 
@@ -6951,7 +6974,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 122.0, 213.0, 1335.0, 876.0 ],
+						"rect" : [ 6.0, 191.0, 1335.0, 876.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 11.0,
